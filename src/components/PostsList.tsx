@@ -11,7 +11,7 @@ const PostsList = ({posts}: PostsListProps) => {
         <div className="post-list">
             {posts.map((post) => (
                 <div className={"post-item"} key={post.id}>
-                    <h4><Link href={"/"}>{post.title}</Link></h4>
+                    <h4><Link href={`posts/${post.id}`}>{post.title}</Link></h4>
                 </div>
             ))}
         </div>
